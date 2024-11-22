@@ -3,5 +3,10 @@
 
 int main()
 {	
-	printf("this is a test\n");	
+	
+	printf("is a tset\n");
+
+	printf("a tset\n");
+
+	printf("tset\n");
 }
