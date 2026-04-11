@@ -1,0 +1,20 @@
+{
+  "name": "airplane-battle",
+  "version": "1.0.0",
+  "description": "经典飞机大战游戏 - Phaser.js 实现",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["phaser", "game", "airplane", "shooter"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
