@@ -4,7 +4,14 @@ __pycache__/
 .Python
 .venv/
 venv/
-.env
 *.egg-info/
+
+node_modules/
+dist/
+*.log
+.idea/
+.vscode/
+
 .DS_Store
 Thumbs.db
+.env
