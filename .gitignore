@@ -1,0 +1,26 @@
+# Build artifacts
+build/
+release/
+debug/
+*.o
+*.obj
+Makefile*
+object_script.*
+.qmake.stash
+*.pro.user
+ui_*.h
+moc_*.cpp
+
+# Config with secrets (use config.ini.example)
+config.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Python scratch scripts
+fix_hls*.py
+
+# OS
+Thumbs.db
+.DS_Store

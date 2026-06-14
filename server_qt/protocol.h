@@ -1,0 +1,46 @@
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
+
+// 服务端独立协议头（与项目根目录 protocol.h 保持同步）
+#include <QtGlobal>
+
+constexpr int DEFAULT_CHUNK_SIZE = 262144;        // 256KB
+constexpr int MAX_CHUNK_SIZE     = 524288;        // 512KB
+constexpr qint64 MAX_FILE_SIZE   = 1073741824LL;  // 1GB
+
+enum MsgType {
+    MSG_REGISTER       = 1,
+    MSG_LOGIN          = 2,
+    MSG_RESPONSE       = 3,
+
+    MSG_GET_VIDEO_LIST = 11,
+    MSG_GET_VIDEO_INFO = 12,
+    MSG_INCREMENT_PLAY = 14,
+
+    MSG_UPLOAD_START   = 15,
+    MSG_UPLOAD_CHUNK   = 16,
+    MSG_UPLOAD_END     = 17,
+    MSG_UPLOAD_RESUME  = 18,
+    MSG_DOWNLOAD_START = 19,
+    MSG_DOWNLOAD_CHUNK = 20,
+
+    MSG_GET_MY_VIDEOS  = 21,
+    MSG_DELETE_VIDEO   = 22,
+
+    MSG_GET_RECOMMEND_FEED = 23,
+    MSG_GET_LIKE_STATUS    = 24,
+    MSG_TOGGLE_LIKE        = 25,
+
+    MSG_SEARCH_VIDEOS      = 26,
+    MSG_GET_PASSWORD_SALT  = 27
+};
+
+enum ResponseCode {
+    RESP_SUCCESS        = 200,
+    RESP_USER_EXISTS    = 401,
+    RESP_PASSWORD_ERROR = 402,
+    RESP_USER_NOT_FOUND = 404,
+    RESP_SERVER_ERROR   = 500
+};
+
+#endif // PROTOCOL_H
